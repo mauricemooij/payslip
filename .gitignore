@@ -1,0 +1,11 @@
+.idea/
+node_modules/
+config.js
+*.swp
+npm-debug.log
+coehandel.sql
+coebe.sql
+.yalc
+yalc.lock
+.env
+.env.local

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Payslip {{period}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 14px;
+            font-size: 14px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>PAYSLIP</h1>
+    <div>
+        <div><strong>Employee Name</strong></div>
+        <div>{{employee_name}}</div>
+    </div>
+    <div>
+        <div><strong>Employee Address</strong></div>
+        <div>{{employee_address}}</div>
+    </div>
+    <div>
+        <div><strong>Pay Period</strong></div>
+        <div>{{period}}</div>
+    </div>
+    <div>
+        <div><strong>Pay Date</strong></div>
+        <div>{{pay_date}}</div>
+    </div>
+    <div>
+        <div><strong>Employer Name</strong></div>
+        <div>{{employer_name}}</div>
+    </div>
+    <div>
+        <div><strong>Employer Address</strong></div>
+        <div>{{employer_address}}</div>
+    </div>
+    <div>
+        <div><strong>Bank Account (IBAN)</strong></div>
+        <div>{{bank_account_iban}}</div>
+    </div>
+    <div>
+        <div><strong>Currency</strong></div>
+        <div>EUR</div>
+    </div>
+<hr>
+<h2>EARNINGS</h2>
+    <div>
+        <div>Basic Salary</div>
+        <div>€ {{basic_salary}}</div>
+    </div>
+    <div>
+        <div>Bonus</div>
+        <div>€ {{bonus}}</div>
+    </div>
+    <div>
+        <div>Other Allowances</div>
+        <div>€ 0.00</div>
+    </div>
+    <div>
+        <div><strong>Total Gross Pay</strong></div>
+        <div>€ {{total_salary}}</div>
+    </div>
+<hr>
+<h2>DEDUCTIONS</h2>
+    <div>
+        <div>Tax Withholding</div>
+        <div>€ 0.00</div>
+    </div>
+    <div>
+        <div>Social Contributions</div>
+        <div>€ 0.00</div>
+    </div>
+    <div>
+        <div>Other Deductions</div>
+        <div>€ 0.00</div>
+    </div>
+    <div>
+        <div><strong>Total Deductions</strong></div>
+        <div>€ 0.00</div>
+    </div>
+<hr>
+<h2>NET PAY</h2>
+    <div>
+        <div><strong>Net Amount Payable</strong></div>
+        <div>€ {{total_salary}}</div>
+    </div>
+<hr>
+<h3>Notes</h3>
+<ul>
+    <li>No taxes or contributions have been withheld at source.</li>
+    <li>The employee is responsible for complying with personal income tax and social contribution obligations under Kazakhstan law.</li>
+</ul>
+</body>
+</html>
