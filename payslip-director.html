@@ -29,7 +29,7 @@
 </div>
 <div>
     <div><strong>Job title</strong></div>
-    <div>{{job_title}}</div>
+    <div>Director</div>
 </div>
 <div>
     <div><strong>Pay period</strong></div>
@@ -59,11 +59,15 @@
 <h2>EARNINGS</h2>
 <div>
     <div>Basic salary</div>
-    <div>€ {{basic_salary}}</div>
+    <div>€ {{director_salary}}</div>
+</div>
+<div>
+    <div>Private use addition for private use of company car</div>
+    <div>€ {{private_use_addition}}</div>
 </div>
 <div>
     <div>Bonus</div>
-    <div>€ {{bonus}}</div>
+    <div>€ 0.00</div>
 </div>
 <div>
     <div>Other allowances</div>
@@ -71,13 +75,13 @@
 </div>
 <div>
     <div><strong>Total gross pay</strong></div>
-    <div>€ {{total_salary}}</div>
+    <div>€ {{gross_salary}}</div>
 </div>
 <hr>
 <h2>DEDUCTIONS</h2>
 <div>
-    <div>Tax withholding</div>
-    <div>€ 0.00</div>
+    <div>Tax withholding ({{director_tax_rate}}%)</div>
+    <div>€ {{tax_withheld}}</div>
 </div>
 <div>
     <div>Social contributions</div>
@@ -89,18 +93,17 @@
 </div>
 <div>
     <div><strong>Total deductions</strong></div>
-    <div>€ 0.00</div>
+    <div>€ {{tax_withheld}}</div>
 </div>
 <hr>
 <h2>NET PAY</h2>
 <div>
     <div><strong>Net amount payable</strong></div>
-    <div>€ {{total_salary}}</div>
+    <div>€ {{net_salary}}</div>
 </div>
 <hr>
 <h3>Notes</h3>
 <ul>
-    <li>No taxes or contributions have been withheld at source.</li>
     <li>The employee is responsible for complying with personal income tax and social contribution obligations under Kazakhstan law.</li>
 </ul>
 </body>
